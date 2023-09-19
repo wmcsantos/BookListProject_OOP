@@ -13,18 +13,21 @@
         <form data-book-form>
             <div class="flex flex-col">
                 <label for="title" class="font-bold">Title</label>
-                <input type="text" data-title id="title" class="mt-2 leading-8 border rounded border-slate-300">
+                <input type="text" data-title id="title" class="mt-2 leading-8 border rounded border-slate-300 focus:bg-yellow-100">
             </div>
             <div class="flex flex-col">
                 <label for="author" class="font-bold mt-2">Author</label>
-                <input type="text" data-author class="mt-2 leading-8 border rounded border-slate-300">
+                <input type="text" data-author class="mt-2 leading-8 border rounded border-slate-300 focus:bg-yellow-100">
             </div>
             <div class="flex flex-col">
                 <label for="title" class="font-bold mt-2">ISBN</label>
-                <input type="text" data-isbn class="mt-2 leading-8 border rounded border-slate-300">
+                <input type="text" data-isbn class="mt-2 leading-8 border rounded border-slate-300 focus:bg-yellow-100">
             </div>
             <div class="flex ">
-                <input type="submit" value="Submit" class="text-xs text-slate-500 mt-2 border leading-8 rounded w-full uppercase cursor-pointer">
+                <input type="submit" 
+                        value="Submit" 
+                        class="text-xs text-slate-500 mt-2 border leading-8 rounded w-full 
+                                uppercase cursor-pointer hover:bg-slate-50 hover:text-slate-800">
             </div>
         </form>
 
@@ -38,11 +41,6 @@
                 </tr>
             </thead>
             <tbody id="book-list">
-                <tr class="leading-10 border-b">
-                    <td>HTML5</td>
-                    <td>Harrison</td>
-                    <td>3473743</td>
-                </tr>
             </tbody>
         </table>
     </div>
